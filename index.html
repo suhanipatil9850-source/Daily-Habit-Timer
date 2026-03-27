@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Habit Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Daily Habit Timer</h1>
+
+    <section class="card">
+      <h2>Add Habit</h2>
+      <div class="row">
+        <input id="habitName" type="text" placeholder="Enter habit name" />
+        <button id="addHabitBtn">Add</button>
+      </div>
+      <p id="addMessage" class="message"></p>
+    </section>
+
+    <section class="card">
+      <h2>Start Timer</h2>
+      <div class="row">
+        <select id="habitSelect"></select>
+        <input id="minutesInput" type="number" min="1" placeholder="Minutes" />
+        <button id="startBtn">Start</button>
+      </div>
+      <p id="timerDisplay" class="timer">00:00</p>
+      <p id="timerMessage" class="message"></p>
+    </section>
+
+    <section class="card">
+      <h2>Progress</h2>
+      <ul id="progressList"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
